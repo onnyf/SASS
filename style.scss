@@ -1,0 +1,77 @@
+// variables
+$bg-color:#333;
+$olufemi:#3498db;
+$text-color:#d41212;
+$padding:20px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding;
+    color: $text-color;
+
+
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+
+
+    li{
+        @media (max-width:760px){
+            text-align: start;
+            margin: 10px 0;
+
+        }
+    a{
+        text-decoration: none;
+        color: black;
+
+    }
+    }
+    @media (max-width:768px){
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        margin-top: 20PX;
+        background-color: $bg-color;
+        width: 200px;
+        border-radius: 5px;
+
+
+    }
+}
+
+    .hamburger{
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+
+        @media (max-width:760px) {
+            display: block;
+        }
+
+    }
+
+}
+
